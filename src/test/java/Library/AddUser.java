@@ -8,5 +8,7 @@ public class AddUser {
 	public void AddNewUser()
 	{
 		System.out.println("Hi Yuvan");
+		System.out.println("Hi Yuvan Surya");
+		System.out.println("Hi Sai!");
 	}
 }
