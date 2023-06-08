@@ -1,14 +1,25 @@
 package Library;
 
+import static io.restassured.RestAssured.*;
 import org.testng.annotations.*;
 
 public class AddUser {
 	
+	// Post Request
+	
 	@Test (priority = 1)
-	public void AddNewUser()
+	public void AddPlace()
 	{
-		System.out.println("Hi Yuvan");
-		System.out.println("Hi Yuvan Surya");
-		System.out.println("Hi Sai!");
+		given()
+		.contentType("application/json")
+		.body("{\r\n"
+				+ "    \"name\" : \"Boss\",\r\n"
+				+ "    \"role\" : \"Sm\"\r\n"
+				+ "}")
+		.log().all()
+		.when()
+			.post("http://localhost:3000/posts/")
+		.then()	
+			.log().all();  
 	}
 }
