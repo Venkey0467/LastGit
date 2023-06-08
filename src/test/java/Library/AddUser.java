@@ -61,4 +61,17 @@ public class AddUser {
 		.then()	
 			.log().all();
 	}
+	
+	// Delete Request
+	
+	@Test (priority = 4)
+	public static void DeleteUser()
+	{
+		given()
+			.pathParam("key" , id)
+		.when()
+			.delete("http://localhost:3000/posts/{key}")
+		.then()	
+			.log().all();
+	}
 }
