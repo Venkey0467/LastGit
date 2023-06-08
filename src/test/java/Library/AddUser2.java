@@ -10,5 +10,11 @@ public class AddUser2 {
 		System.out.println("Hi Selenium");
 		System.out.println("Hi Testng");
 		System.out.println("Hi Appium");
+		System.out.println("Hi Selenium");
+		System.out.println("Hi Testng");
+		System.out.println("Hi Appium");
+		System.out.println("Hi Selenium");
+		System.out.println("Hi Testng");
+		System.out.println("Hi Appium");
 	}
 }
