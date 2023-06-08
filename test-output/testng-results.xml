@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-08T06:17:54 PDT" name="Default suite" finished-at="2023-06-08T06:17:58 PDT" duration-ms="4182">
+  <suite started-at="2023-06-08T06:44:14 PDT" name="Default suite" finished-at="2023-06-08T06:44:20 PDT" duration-ms="6715">
     <groups>
     </groups>
-    <test started-at="2023-06-08T06:17:54 PDT" name="Default test" finished-at="2023-06-08T06:17:58 PDT" duration-ms="4182">
+    <test started-at="2023-06-08T06:44:14 PDT" name="Default test" finished-at="2023-06-08T06:44:20 PDT" duration-ms="6715">
       <class name="Library.AddUser">
-        <test-method signature="AddPlace()[pri:1, instance:Library.AddUser@36916eb0]" started-at="2023-06-08T06:17:54 PDT" name="AddPlace" finished-at="2023-06-08T06:17:58 PDT" duration-ms="4063" status="PASS">
+        <test-method signature="CreateUser()[pri:1, instance:Library.AddUser@7bab3f1a]" started-at="2023-06-08T06:44:14 PDT" name="CreateUser" finished-at="2023-06-08T06:44:20 PDT" duration-ms="6409" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddPlace -->
+        </test-method> <!-- CreateUser -->
+        <test-method signature="GetUser()[pri:2, instance:Library.AddUser@7bab3f1a]" started-at="2023-06-08T06:44:20 PDT" name="GetUser" finished-at="2023-06-08T06:44:20 PDT" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUser -->
+        <test-method signature="UpdateUser()[pri:3, instance:Library.AddUser@7bab3f1a]" started-at="2023-06-08T06:44:20 PDT" name="UpdateUser" finished-at="2023-06-08T06:44:20 PDT" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
       </class> <!-- Library.AddUser -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

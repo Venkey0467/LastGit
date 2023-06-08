@@ -2,18 +2,17 @@ package Library;
 
 import static io.restassured.RestAssured.*;
 import org.testng.annotations.*;
-
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class AddUser {
 	 
-	int id;
+	public static int id;
 	
 	// Post Request
 	
 	@Test (priority = 1)
-	public void CreateUser()
+	public static void CreateUser()
 	{
 		Response res = given()
 		.contentType("application/json")
@@ -33,13 +32,32 @@ public class AddUser {
 	
 	// Get Request
 	
-	@Test (priority = 1)
-	public void GetUser()
+	@Test (priority = 2)
+	public static void GetUser()
 	{
 		given()
 			.pathParam("key" , id)
 		.when()
 			.get("http://localhost:3000/posts/{key}")
+		.then()	
+			.log().all();
+	}
+	
+	// Put Request
+	
+	@Test (priority = 3)
+	public void UpdateUser()
+	{
+		given()
+			.contentType("application/json")
+			.body("{\r\n"
+				+ "    \"name\" : \"Boss1\",\r\n"
+				+ "    \"role\" : \"Sm1\"\r\n"
+				+ "}")
+			.pathParam("key" , id)
+			.log().all()
+		.when()
+			.put("http://localhost:3000/posts/{key}")
 		.then()	
 			.log().all();
 	}
